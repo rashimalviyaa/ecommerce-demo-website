@@ -1,0 +1,326 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------HEADER CSS-------------------*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;/*the space between its content and its border.*/
+    background:#dfe0e0;
+    box-shadow: 0 5px 15px lightgray; /* attaches one or more drop- shadows to the box*/
+    position:sticky; /* use ke scroll krne ke according chalta rahega*/
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px; /* top&bottom 0 and left&right 20*/
+    
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover{
+    color: gray;
+}
+
+/* ---------------------HEADER CSS END-------------------*/
+
+/* ---------------------FIRST SECTION-------------------*/
+
+#hero{
+    background-image: url(images/home_page.jpg);
+    height: 70vh;/* 70 % of viewport height*/
+    width: 175vh;
+    background-position: top 60% right 0;/*top 60%: The background image will be positioned 60% down from the top of the element.
+    right 0: The background image will be positioned flush against the right edge of the element.*/
+    background-size: cover;
+    padding: 0 80px;/* 0 top&bottem and 80 right and left*/
+    display: flex;
+    align-items: flex-start;/*aligns the items to the start of the cross axis (vertically)*/
+    justify-content: center;/*  centers the items along the main axis (horizontally).*/
+    flex-direction: column;
+    box-shadow: black;
+    margin: 30px;
+    box-shadow:0px 0px 100px lightgray;
+}
+
+#hero h4{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    margin-bottom: -25px;
+}
+#hero h2{
+    font-size: 50px;
+    margin-bottom: -35px;
+}
+
+#hero p{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#hero button{
+    background-color: blueviolet;
+    border-radius: 50px;
+    font-size: 25px;
+    border: none;
+    width: 170px;
+    height: 50px;
+    color: white;
+}
+
+/* ---------------------FIRST SECTION END-------------------*/
+
+/* ---------------------SECOND SECTION-------------------*/
+
+#ads .ad-box{
+    background-image: url(images/headphone.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: top 60% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; /* it means that the flex items inside the container will be arranged vertically in a column.*/
+    box-shadow: lightgray;
+    margin-left: 80px;
+}
+
+#ads .ad-box2{
+    background-image: url(images/smartphone.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: top 60% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;/*it means that the flex items will be aligned to the start of the cross axis within the flex container.*/
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: lightgray;
+    margin-right: 80px;
+}
+
+#ads .ad-box h4{
+    color: white;
+    margin-bottom: -10px;
+}
+
+#ads .ad-box h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: -30px;
+}
+
+#ads .ad-box p{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#ads .ad-box button{
+    background-color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    border: none;
+    width: 170px;
+    height: 50px;
+}
+
+#ads .ad-box2 button{
+    background-color: white;
+    border-radius: 50px;
+    font-size: 25px;
+    border: none;
+    width: 170px;
+    height: 50px;
+}
+#ads .container{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    column-gap: 25px;
+}
+
+#ads .ad-box2 h4{
+    color: white;
+    margin-bottom: -10px;
+}
+
+#ads .ad-box2 h2{
+    color: white;
+    font-size: 40px;
+    margin-bottom: -30px;
+}
+
+#ads .ad-box2 p{
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ---------------------SECOND SECTION END-------------------*/
+
+/* ----------------------THIRD SECTION----------------------*/
+
+#products .pr img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: -40px;
+    margin-top: 0px;
+}
+
+#products .container{
+    display: flex;
+    column-gap: 20px;
+    padding-left: 50px;
+}
+
+#products .pr{
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    transition: 1s;
+    margin-bottom: 40px;
+}
+
+#products .pr{
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    transition: 1s;
+}
+
+#products p{
+    padding-left: 25px;
+}
+
+#products{
+    margin-top: 40px;
+    border: 1px solid #cce7d0;
+    align-items: center;
+    box-shadow:0px 0px 100px lightgray;
+}
+
+#products button{
+    display: block;
+    margin:auto;
+    background-color: blueviolet;
+    border-radius: 100px;
+    font-size: 25px;
+    border: none;
+    width: 170px;
+    height: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#products h1{
+    font-size: 35px;
+}
+
+/* ----------------------------THIRD SECTION END--------------------*/
+
+/* ----------------------------FOURTH SECTION--------------------*/
+
+#newsletter{
+    background-color: blueviolet;
+    box-shadow:0px 0px 100px lightgray;
+}
+
+
+#newsletter h1{
+    padding-top: 35px;
+    color:white;
+    font-size: 35px;
+    margin-bottom: -10px;
+}
+
+#newsletter p{
+    color: white;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+
+#newsletter .ele{
+    width:400px;
+    max-width: 100%;
+    position: relative;
+    margin-left: 450px;
+}
+
+#newsletter .e{
+    margin-left: 450px;
+    margin-bottom: 20px;
+}
+
+#newsletter .ele .inp{
+    width:750px;
+    border-radius: 100px;
+    height:30px;
+    border: 1px solid;
+    margin-bottom: 60px;
+}
+
+#newsletter .ele .subs{
+    border-radius: 100px;
+    height:35px;
+    width:120px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right:-400px;
+    top: -1px;
+    border:none;
+}
+
+/* --------------------------FOURTH SECTION END--------------------*/
+
+.foot .container{
+    display:flex;
+    column-gap: 240px;
+    padding-left: 80px;
+    margin-top: 35px;
+    box-shadow:0px 0px 100px lightgray;
+    margin-bottom:50px;
+    padding-bottom:50px;
+}
+
+.foot .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.foot .col a{
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.foot .ima{
+    margin-left: -8px;
+}
+
+.foot .ima img{
+    height: 25px;
+}

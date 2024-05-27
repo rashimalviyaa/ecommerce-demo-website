@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-image: url("loginback.jpg");
+}
+
+.content{ 
+  width: 330px;
+  background: #253C78;
+  border-radius: 10px;
+  padding: 40px 30px;
+  box-shadow: -3px -3px 7px #ffffff73,
+              2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+.content img{
+  width: 90px;
+  height: 90px;
+  margin-top: -100px;
+  border-radius: 50px;
+  box-shadow: 
+
+  0px 0px 2px #5f5f5f,
+  0px 0px 0px 5px #ecf0f3,
+  8px 8px 15px #a7aaaf,
+  -8px -8px 15px #ffffff
+  ;
+}
+
+.content .text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  color: #000;
+}
+
+.content .field{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.field input{
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #595959;
+  background: #dde1e7;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus ~ label{
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -1px -1px 2px #ffffff73;
+}
+
+.field:nth-child(2){
+  margin-top: 20px;
+}
+
+.field span{
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: #595959;
+}
+
+.field label{
+  position: absolute;
+  top: 50%;
+  left: 45px;
+  color: #666666;
+  transform: translateY(-50%);
+}
+
+
+.field input:focus ~ label{
+  opacity: 0;
+}
+ 
+
+button{
+  margin: 25px 0 0 0;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  background: #dde1e7;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+}
+
+button:focus{
+  color: #D36582;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+}
+.content .or{
+  color: black;
+  margin-top: 9px;
+}
+ 
+.icon-button{
+  margin-top: 15px;
+}
+.icon-button span{
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+   
+ border-radius: 5px;
+  line-height: 30px;
+  
+  background: #dde1e7;
+  box-shadow: 2px 2px 5px #babecc,
+              -5px -5px 10px #ffffff73;
+}
+.icon-button span.facebook{
+  margin-right: 17px;
+
+}
+.icon-button span:hover{
+  color: #D36582;
+  box-shadow: inset 2px 2px 5px #babecc,
+              inset -5px -5px 10px #ffffff73;
+       
+}
+    </style>
+</head>
+ <body>
+    <div class="content">
+ <img src="https://i.pinimg.com/474x/3b/81/b5/3b81b5bfb9d457d9cb47fa9bdd2bb78f.jpg">
+ <div class="text">TechTrendZ</div>
+ <form class="form-horizontal" action="process_form(1).php" method="post">
+   <div class="field">
+     <span class="fa fa-user"></span>
+     <input type="email" name="email" placeholder="Enter your email"  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+     title="Enter a valid email address" required>
+  
+   </div>
+   <div class="field">
+     <span class="fa fa-lock"></span>
+     <input type="password" name="password" placeholder="Enter your password"  pattern=".{8,}" title="Password must be at least 8 characters long." required>
+        </div>
+        
+        <button>Log in</button>
+        <div class="or">Or</div>
+        <div class="icon-button"> 
+            
+          <span class="facebook"><i class="fa fa-facebook"></i>  Facebook</span> <!--<span> is an inline element, which means it does not create a new line before or after its content. It's typically used within a block-level element like a <div> or a paragraph (<p>) to style or apply behavior to specific parts of the text.-->
+
+          <span><i class="fa fa-google"></i>  Google</span>
+
+
+        </div>
+      </form>
+  </div>
+ 
+ </body>
+</body>
+</html>

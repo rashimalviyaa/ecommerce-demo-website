@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE WEBSITE</title>
+    <style>
+        #header {
+            display: flex;
+            justify-content: space-between; /* Distribute items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+
+        .logo {
+    font-family:  sans-serif; /* Use your preferred font-family */
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+    font-style: italic;
+    color: #4b1903; /* Your desired text color */
+    margin: left;
+}
+
+        .container {
+            margin-right: 20px;
+        }
+
+        .container button {
+            padding: 10px 20px;
+            background-color: #3b99e0;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .container button:hover {
+            background-color: #2a7bac;
+        }
+
+        .container button:focus {
+            outline: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <p class="logo">TechTrendZ</p>
+
+         
+        <h1><div class="container">
+            <button onclick="window.location.href='http://localhost/yay/register.html'">Register</button>
+            <button onclick="window.location.href='http://localhost/yay/login.html'">Login</button>
+        </div></h1>
+
+        <div>
+            <ul id="navbar">
+                <li><a class='active' href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a onclick="window.location.href='http://localhost/yay/contact.html'">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Best Prices</h4>
+        <h2>Incredible Prices</h2>
+        <h2>on All Your</h2>
+        <h2>Favourite Items</h2>
+        <p>Get more for less on selected brands</p>
+        <button onclick="window.location.href='products.html'">Shop Now</button>
+    </section>
+
+    <section id="ads">
+        <div class="container">
+            <div class="ad-box">
+                <h4>Just In</h4>
+                <h2>Take Your Sound</h2>
+                <h2>Anywhere</h2>
+                <p>Top Headphone Brands</p>
+                <button style="color: black;">Shop</button>
+            </div>
+            <div class="ad-box2">
+                <h4>Holiday Deals</h4>
+                <h2>Up to</h2>
+                <h2>30% off</h2>
+                <p>Selected Smartphone Brands</p>
+                <button style="color: black;">Shop</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h1 align="center">Best Seller</h1>
+        <div class="container">
+            <div class="pr">
+                <img src="images/tv.jpg">
+                <p>Shel 50" Class LED 4K</p>
+                <p>UHD Smart TV</p>
+            </div>
+            <div class="pr">
+                <img src="images/speaker.jpg">
+                <p>Turn5 Portable Bluetooth</p>
+                <p>Speaker</p>
+            </div>
+            <div class="pr">
+                <img src="images/watch.jpg">
+                <p>Space Moon Smartwatch</p>
+                <p>With Charger</p>
+            </div>
+            <div class="pr">
+                <img src="images/laptop.jpg">
+                <p>Pilates 16" Touch Screen</p>
+                <p>Laptop 24GB Memory</p>
+            </div>
+            <div class="pr">
+                <img src="images/tablet.jpg">
+                <p>Ocean Pro 11 - 12.3"</p>
+                <p>Touch Screen</p>
+            </div>
+        </div>
+        <button>View All</button>
+    </section>
+
+    <section id="newsletter">
+        <h1 align="center">Newsletter</h1>
+        <p align="center">Sign up to receive updates on new arrivals and special offers</p>
+        <p class="e">Email</p>
+        <div class="ele">
+            <input class="inp">
+            <button class="subs">Subscribe</button>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="container">
+            <div>
+                <h1>Store Location</h1>
+                <p>Manipal University</p>
+                <p>Jaipur, Rajasthan</p>
+                <p>info@mysite.com</p>
+                <p>123-456-7890</p>
+                <div class="ima">
+                    <a href="#"><img src="images/fb.jpg"></a>
+                    <a href="#"><img src="images/ig.jpg"></a>
+                    <a href="#"><img src="images/x.jpg"></a>
+                    <a href="#"><img src="images/yt.jpg"></a>
+                </div>
+            </div>
+            <div class="col">
+                <h1>Shop</h1>
+                <a href="#">Shop All</a>
+                <a href="#">Computers</a>
+                <a href="#">Smartphones</a>
+                <a href="#">Tablets</a>
+                <a href="#">Wearable Tech</a>
+                <a href="#">T.V & Home Cinema</a>
+            </div>
+            <div class="col">
+                <h1>Customer Support</h1>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Help Center</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <div class="col">
+                <h1>Policy</h1>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Payment Methods</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

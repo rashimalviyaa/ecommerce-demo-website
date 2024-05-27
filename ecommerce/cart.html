@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+    .shopping-cart{
+	padding-bottom: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.shopping-cart.dark{
+	background-color: antiquewhite;
+}
+
+.shopping-cart .content{
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+	background-color: white;
+}
+
+.shopping-cart .block-heading{
+    padding-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.shopping-cart .block-heading p{
+	text-align: center;
+	max-width: 420px;
+	margin: auto;
+	opacity:0.7;
+}
+
+.shopping-cart .dark .block-heading p{
+	opacity:0.8;
+}
+
+.shopping-cart .block-heading h1,
+.shopping-cart .block-heading h2,
+.shopping-cart .block-heading h3 {
+	margin-bottom:1.2rem;
+	color: rgb(138, 43,226);
+}
+
+.shopping-cart .items{
+	margin: auto;
+}
+
+.shopping-cart .items .product{
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.shopping-cart .items .product .info{
+	padding-top: 0px;
+	text-align: center;
+}
+
+.shopping-cart .items .product .info .product-name{
+	font-weight: 600;
+}
+
+.shopping-cart .items .product .info .product-name .product-info{
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.shopping-cart .items .product .info .product-name .product-info .value{
+	font-weight: 400;
+}
+
+.shopping-cart .items .product .info .quantity .quantity-input{
+    margin: auto;
+    width: 80px;
+}
+
+.shopping-cart .items .product .info .price{
+	margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+ }
+
+.shopping-cart .summary{
+	border-top: 2px solid rgb(138, 43,226);
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 30px;
+}
+
+.shopping-cart .summary h3{
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 600;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.shopping-cart .summary .summary-item:not(:last-of-type){
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shopping-cart .summary .text{
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.shopping-cart .summary .price{
+	font-size: 1em;
+	float: right;
+}
+
+.shopping-cart .summary button{
+	margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+	.shopping-cart .items .product .info {
+		padding-top: 25px;
+		text-align: left; 
+	}
+
+	.shopping-cart .items .product .info .price {
+		font-weight: bold;
+		font-size: 22px;
+		top: 17px; 
+	}
+
+	.shopping-cart .items .product .info .quantity {
+		text-align: center; 
+	}
+	.shopping-cart .items .product .info .quantity .quantity-input {
+		padding: 4px 10px;
+		text-align: center; 
+	}
+}
+
+</style>
+</head>
+<body>
+	<main class="page">
+	 	<section class="shopping-cart dark">
+	 		<div class="container">
+		        <div class="block-heading">
+		          <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Shopping Cart</h1>
+		          <p style="font-weight: bold; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Step into the world of footwear fashion with our curated collection of shoes that blend comfort, quality, and trend-setting designs. From casual kicks to sophisticated stilettos, we have something to suit every taste and occasion. Browse through our virtual aisles, add your favorites to your cart, and let your feet do the talking. Welcome to a shopping experience where every click brings you closer to stepping out in style!</p>
+		        </div>
+		        <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="cart2.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#" style="font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:rgb(138, 43,226) ;">Fossil Men: Fs5237</a>
+								 							<div class="product-info">
+									 							<div>Case diameter: <span class="value">43 Millimetres</span></div>
+									 							<div>Item weight: <span class="value">249 g</span></div>
+									 							<div>Watch movement type: <span class="value">Quartz</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>₹12,800</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="cart1.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#" style="font-size: larger; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(138, 43,226);">Apple AirPod Max</a>
+								 							<div class="product-info">
+									 							<div>Chip: <span class="value">Apple H1 headphone chip (each ear cup)</span></div>
+									 							<div>Microphones: <span class="value">Eight microphones for Active Noise Cancellation<br>
+                                                                    Three microphones for voice pickup</span></div>
+									 							<div>Size and Weight: <span class="value">384.8 grams (13.6 ounces)</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>₹59,900</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="cart3.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: larger; color: rgb(138, 43,226);">Nikon D780</a>
+								 							<div class="product-info">
+									 							<div>Type: <span class="value">35.9 x 23.9 mm CMOS sensor</span></div>
+									 							<div>Total pixels: <span class="value">25.28 million</span></div>
+									 							<div>File system: <span class="value">DCF 2.0, Exif 2.31</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>₹3,20,900</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+			 					<h3>Summary</h3>
+			 					<div class="summary-item"><span class="text">Subtotal</span><span class="price">₹3,93,600</span></div>
+			 					<div class="summary-item"><span class="text">Discount</span><span class="price">$0</span></div>
+			 					<div class="summary-item"><span class="text">Shipping</span><span class="price">$0</span></div>
+			 					<div class="summary-item"><span class="text">Total</span><span class="price">$3,93,600</span></div>
+			 					<button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: rgb(138, 43,226);">Checkout</button>
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+	 		</div>
+		</section>
+	</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

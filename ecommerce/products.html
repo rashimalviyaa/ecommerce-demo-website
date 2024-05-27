@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Products - All Products</title>
+  <style>
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for subtle contrast */
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: bold; /* Bold text for navigation links */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;/* if the total width of flex items exceeds the width of .container, the items will wrap onto the next line, ensuring they remain visible and the layout remains flexible.*/
+    justify-content: space-between;
+  }
+  
+  .product {
+    width: calc(23% - 20px); /* Adjust width for more/less products per row */
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for product listings */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for definition */
+    padding: 10px;
+    text-align: center;
+    transition: all 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .product:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+  }
+  
+  .product img {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Scales image to fit container while maintaining aspect ratio */
+  }
+  
+  .product h3,
+  .product p {
+    margin-bottom: 5px;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out; /* Smooth button hover effect */
+  }
+  
+  .product button:hover {
+    background-color: #0069d9; /* Darker shade on hover */
+  }
+  nav a img {
+  width: 40px; /* Adjust width for desired size */
+  height: 40px; /* Adjust height for desired size */
+  margin-left: 5px; /* Adjust margin for spacing */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amazing Products</h1>
+    <nav>
+      <div>
+        <ul id="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>All Products</h2>
+    <section class="products">
+      <article class="product">
+        <a href="product-detail.html">  <img src="apple1.jpg" alt="Product 1">
+        </a>
+        <h3><a href="product-detail.html">iPhone 15 Pro</a></h3> 
+        <div class="product-info">
+          <span class="price">₹159900.00</span>
+          <button data-product-id="1">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product"><!--  it suggests that the element it's applied to (for example, a button or a div) is associated with a product and that the product's unique identifier or ID is "1".-->
+        <a href="product-detail2.html">  <img src="apple2.jpg" alt="Product 2">
+        </a>
+        <h3><a href="product-detail2.html">iPad Pro</a></h3>  
+        <div class="product-info">
+          <span class="price">₹81900.00</span>
+          <button data-product-id="2">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product"><!--<article> tag in HTML is used to define a self-contained, independent piece of content -->
+        <a href="product-detail3.html">  <img src="apple3.jpg" alt="Product 3">
+        </a>
+        <h3><a href="product-detail3.html">AirPods (2nd Generation)</a></h3>  
+        <div class="product-info">
+          <span class="price">₹24900.00</span>
+          <button data-product-id="3">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="product-detail3.html">  <img src="apple4.jpg" alt="Product 3">
+        </a>
+        <h3><a href="product-detail3.html">HomePod Mini</a></h3>  
+        <div class="product-info">
+          <span class="price">₹10900.00</span>
+          <button data-product-id="3">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="product-detail3.html">  <img src="apple5.jpg" alt="Product 3">
+        </a>
+        <h3><a href="product-detail3.html">Apple Watch Ultra 2</a></h3>  
+        <div class="product-info">
+          <span class="price">₹41900.00</span>
+          <button data-product-id="3">Add to Cart</button>
+        </div>
+      </article> 
+
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Amazing Products</p><!-- c ka symbol aajata hai for copyright-->
+  </footer>
+
+</body>
+</html>
